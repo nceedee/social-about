@@ -1,0 +1,458 @@
+@font-face{
+    font-family: regular;
+    src: url(../font/Raleway/static/Raleway-Regular.ttf);
+}
+
+
+@font-face{
+    font-family: raleway;
+    src: url(../font/Raleway/static/Raleway-Light.ttf );
+}
+
+
+
+
+*{
+   box-sizing: border-box;
+}
+
+body{
+    background-image: url(../image/paper.gif);
+    margin: 0px;
+    padding: 0px;
+    font-family: regular;
+}
+
+p{
+    font-family: raleway;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../image/image6.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    bottom: 4em;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+
+nav img{
+    width: 150px;
+    
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    top: 5em;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    position: relative;
+    
+    
+}
+
+.nav-links ul li a:hover{
+    width: 100%;
+    border: 2px solid #b8860b;
+}
+.nav-links ul li:after{
+    content: '';
+    width: 0px;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+
+.hero-btn2:hover{
+    border: 1px solid #000000;
+    background: #b8860b;
+    transition: 1s;
+    border: none;
+}
+.text-box h1{
+    font-size: 50px;
+    color: #b8860b;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid #fff;
+    padding: 12px 20px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    position: absolute;
+    right: 50%;
+}
+
+.hero-btn2{
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid #fff;
+    padding: 12px 20px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+}
+
+.hero-btn:hover{
+    border: 1px solid #000000;
+    background: #b8860b;
+    transition: 1s;
+    border: none;
+}
+
+p{
+    color: gray;
+}
+
+
+
+
+/* -----school---- */
+
+.school{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+
+p{
+    color: #000000;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+h1{
+    font-size: 26px;
+    font-weight: 600;
+    color: #b8860b;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.school-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5S;
+    
+}
+h3{
+    text-align: center;
+    color: #b8860b;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.school-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+.school-col:hover{background-color: #e8bc4f;}
+
+
+
+
+/* -----social---- */
+
+.social{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.social-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-col img{
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    display: block
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: #b8870b95;
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+
+}
+
+
+
+/* --------about/social--------- */
+
+
+.socialabout{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.row-video{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.socialabout-col{
+    flex-basis: 200%;
+    width: 50%;
+}
+
+.socialabout-col video{
+    width: 80%;
+    height: 50vh;
+}
+
+.link-hover{
+    text-decoration: none;
+}
+.link-hover:hover {
+    text-decoration: underline #777;
+    font-family: monospace;
+}
+
+@media (max-width: 320px){
+    .nav1 .img{
+        width: 40px;
+        height: 40px;
+        
+    }
+
+    .header .nav-links ul a{
+        display: flex;
+        flex-wrap: nowrap;
+        position: relative;
+        right: 50;
+    }
+
+    .text-box h1{
+        font-size: 12px;
+    }
+    
+    .text-box p{
+        font-size: 8px;
+    }
+
+    .school .row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social .row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social .row img{
+        height: 200px;
+    }
+
+    .socialabout h1{
+        font-size: 17px;
+    }
+
+}
+
+@media (max-width: 375px){
+
+    body{
+        margin-top: 50px;
+        overflow-x: hidden;
+    }
+
+    .nav1 .img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .header .edit .nav-links ul li a{
+        font-size: 10px;
+        margin-top: 50em;
+        
+    }
+
+
+    .header{
+        position: relative;
+    }
+
+    .header .nav-links ul{
+        display: flex;
+        flex-wrap: nowrap;
+        position: absolute;
+        bottom: 60;
+        right: 35;
+    }
+
+    .text-box h1{
+        font-size: 15px;
+    }
+    
+    .text-box p{
+        font-size: 10px;
+    }
+
+    
+    .school .row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social .row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .socialabout h1{
+        font-size: 17px;
+    }
+
+
+}
+
+@media (max-width: 425px){
+    .nav1 .img{
+        width: 50px;
+        height: 50px;
+        position: relative;
+        top: 60;
+    }
+
+    .header .edit .nav-links ul li a{
+        font-size: 10px;
+        margin-top: 50em;
+    }
+
+
+    .header .nav-links ul{
+        display: flex;
+        flex-wrap: nowrap;
+        position: absolute;
+        bottom: 60;
+        left: 20;
+    }
+
+    .text-box h1{
+        font-size: 15px;
+    }
+    
+    .text-box p{
+        font-size: 10px;
+    }
+
+    
+    .school .row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social .row{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .social .row img{
+        height: 400px;
+    } 
+
+    .socialabout h1{
+        font-size: 17px;
+    }
+
+}
+
+
+
+
+
+
+
+
